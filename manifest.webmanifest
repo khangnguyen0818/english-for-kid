@@ -1,0 +1,9 @@
+{
+  "name": "Bé Học Tiếng Anh",
+  "short_name": "Học tiếng Anh",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff8e7",
+  "theme_color": "#ffb703",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
