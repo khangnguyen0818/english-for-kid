@@ -195,6 +195,11 @@ main {
   border: 5px solid transparent;
   transition: transform .08s;
 }
+.num {
+  font-weight: 800; line-height: 1; color: var(--orange);
+  font-size: .85em; letter-spacing: -.02em;
+  text-shadow: 0 5px 0 rgba(0, 0, 0, .12);
+}
 .choice .swatch { width: 70%; height: 70%; }
 .choice.correct { border-color: var(--green); background: #e9fbef; animation: pop .4s; }
 .choice.wrong { border-color: var(--red); background: #ffecec; animation: shake .4s; opacity: .55; }

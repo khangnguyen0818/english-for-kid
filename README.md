@@ -4,7 +4,8 @@ Web app học tiếng Anh cho bé (khoảng 8 tuổi), giao diện tiếng Việ
 
 ## Tính năng
 
-- **📖 Học từ vựng theo 6 chủ đề:** Con vật, Màu sắc, Đồ ăn, Gia đình, Trường học, Số đếm (67 từ).
+- **📖 Học từ vựng theo 16 chủ đề (251 từ):** Con vật, Màu sắc, Đồ ăn, Trái cây, Rau củ, Gia đình,
+  Cơ thể, Quần áo, Trường học, Đồ chơi, Xe cộ, Thời tiết, Trong nhà, Nghề nghiệp, Cảm xúc, Số đếm (0–20, 30, 40, 50, 100).
   Mỗi từ có hình minh họa, nghĩa tiếng Việt, nút 🔊 nghe phát âm và nút 🐢 nghe chậm.
 - **🎮 Trò chơi Nghe & chọn hình:** nghe từ tiếng Anh rồi chọn 1 trong 4 hình. Mỗi lượt 10 câu,
   chơi theo từng chủ đề hoặc trộn tất cả.

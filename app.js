@@ -39,8 +39,12 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 
 function picHTML(w) {
   if (w.swatch) return `<span class="swatch" style="background:${w.swatch}"></span>`;
+  if (w.num !== undefined) return `<span class="num">${w.num}</span>`;
   return esc(w.img);
 }
+
+// Hai từ có cùng hình thì không được làm đáp án nhiễu của nhau.
+const picKey = (w) => w.img || w.swatch || "num:" + w.num;
 
 function learnedCount(topic) {
   return topic.words.filter((w) => state.learned[topic.id + ":" + w.en]).length;
@@ -333,7 +337,7 @@ function renderGame(topic) {
 
   function drawRound() {
     const target = targets[round];
-    const others = shuffle(pool.filter((w) => w.en !== target.en && (w.img || w.swatch) !== (target.img || target.swatch)));
+    const others = shuffle(pool.filter((w) => w.en !== target.en && picKey(w) !== picKey(target)));
     const seen = new Set([target.en]);
     const distract = [];
     for (const w of others) {
