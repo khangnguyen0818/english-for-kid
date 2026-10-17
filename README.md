@@ -4,28 +4,37 @@ Web app học tiếng Anh cho bé (khoảng 8 tuổi), giao diện tiếng Việ
 
 ## Tính năng
 
-- **📖 Học từ vựng theo 16 chủ đề (251 từ):** Con vật, Màu sắc, Đồ ăn, Trái cây, Rau củ, Gia đình,
-  Cơ thể, Quần áo, Trường học, Đồ chơi, Xe cộ, Thời tiết, Trong nhà, Nghề nghiệp, Cảm xúc, Số đếm (0–20, 30, 40, 50, 100).
-  Mỗi từ có hình minh họa, nghĩa tiếng Việt, nút 🔊 nghe phát âm và nút 🐢 nghe chậm.
-- **🎮 Trò chơi Nghe & chọn hình:** nghe từ tiếng Anh rồi chọn 1 trong 4 hình. Mỗi lượt 10 câu,
-  chơi theo từng chủ đề hoặc trộn tất cả.
+- **📖 Học từ vựng: 110 chủ đề, 1.274 từ**, chia thành 11 nhóm:
+  Động vật · Ăn uống · Con người · Hành động · Nhà cửa · Trường học · Số & thời gian ·
+  Thiên nhiên · Thành phố & thế giới · Vui chơi · Giao tiếp (chào hỏi, câu nói hằng ngày,
+  giới thiệu bản thân, hỏi trong lớp…).
+  Mỗi từ có hình minh họa, nghĩa tiếng Việt, nút 🔊 nghe phát âm và 🐢 nghe chậm.
+- **🎮 6 trò chơi** (chơi theo từng chủ đề hoặc trộn tất cả):
+  - 👂 **Nghe & chọn hình** — nghe từ, chọn 1 trong 4 hình
+  - 🖼️ **Nhìn hình chọn từ** — nhìn hình, chọn từ tiếng Anh đúng
+  - 🎈 **Bắn bóng bay** — nghe từ, chạm vào quả bóng đúng trước khi nó bay mất
+  - 🃏 **Lật thẻ trí nhớ** — tìm cặp thẻ hình và chữ
+  - 🔤 **Xếp chữ** — xếp các chữ cái thành từ đúng (có nút gợi ý)
+  - ⚡ **Đúng hay sai** — 60 giây trả lời nhanh, có lưu kỷ lục
 - **⭐ Điểm sao & phần thưởng:**
-  - +1 ⭐ cho mỗi từ mới bé nghe lần đầu
-  - +5 ⭐ và huy hiệu khi học hết một chủ đề
-  - +1 ⭐ mỗi câu trả lời đúng ngay lần đầu, +3 ⭐ thưởng khi đúng cả 10 câu
-  - Mở khóa bộ sưu tập nhãn dán (🐣 🦋 🐬 🦄 🚀 🏆 …) và danh hiệu theo số sao
-- Tiến độ được lưu ngay trên điện thoại (localStorage). Bố mẹ có thể xóa tiến độ ở trang Phần thưởng.
+  - +1 ⭐ cho mỗi từ mới bé nghe lần đầu, +5 ⭐ và huy hiệu khi học hết một chủ đề
+  - Sao cho mỗi câu trả lời đúng trong trò chơi, thưởng thêm khi đúng hết
+  - 20 nhãn dán để sưu tập và các danh hiệu theo số sao
+- Tiến độ được lưu ngay trên máy (localStorage). Bố mẹ có thể xóa tiến độ ở trang Phần thưởng.
 
-Phát âm dùng giọng đọc có sẵn của trình duyệt (Web Speech API) nên không cần mạng
-cho phần âm thanh. Nếu không nghe được, hãy tắt chế độ im lặng của điện thoại và tăng âm lượng.
+Phát âm dùng giọng đọc có sẵn của trình duyệt (Web Speech API). Nếu không nghe được, hãy tắt
+chế độ im lặng của điện thoại và tăng âm lượng.
 
 ## Thêm / sửa từ vựng
 
-Mở file `data.js`, thêm dòng mới vào chủ đề, ví dụ:
+Mở file `data.js`. Mỗi từ là một dòng dạng `[tiếng Anh, nghĩa tiếng Việt, hình]`, ví dụ:
 
 ```js
-{ en: "horse", vi: "con ngựa", img: "🐴" },
+["horse", "con ngựa", "🐴"],
 ```
+
+Muốn thêm chủ đề mới, chép một khối `T("...", "...", "...", [ ... ])` trong cùng nhóm rồi sửa lại.
+Đừng đổi mã chủ đề hay chữ tiếng Anh của từ đã có, vì tiến độ của bé lưu theo đó.
 
 ## Chạy thử trên máy tính
 
